@@ -7,6 +7,7 @@ a random word, which is 64 chars long. The line separator
 is '\n'.
 
 To Build: /opt/kotlinc/bin/kotlinc sample.kt -include-runtime -d sample.jar
+See also: https://kotlinlang.org/docs/tutorials/command-line.html
 To Run: java -jar sample.jar
 
 Note: If you don't like Java, there try the incredibly slow Python version.
