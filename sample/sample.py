@@ -6,10 +6,14 @@ from string import digits, ascii_letters
 Writes a 4 GB text file. Each line of the file contains
 a random word, which is 64 chars long. The line separator
 is '\n'.
+
+To run: python3 sample.py (needs Python-3.x)
+
+Note: Python random is incredibly slow. The Kotlin version is 20x faster.
+Author: Fidel Dahan
 """
 
-# FILE_SIZE = 4 * 1024 * 1024 * 1024  # 4 GB
-FILE_SIZE = 16 * 1024 * 1024  # 16 MB
+FILE_SIZE = 4 * 1024 * 1024 * 1024  # 4 GB
 ALPHABET64 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789__"
 WORD_COUNT = FILE_SIZE // (len(ALPHABET64) + 1)
 

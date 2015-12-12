@@ -5,16 +5,10 @@ import java.util.*
 Writes a 4 GB text file. Each line of the file contains
 a random word, which is 64 chars long. The line separator
 is '\n'.
-
-To Build: /opt/kotlinc/bin/kotlinc sample.kt -include-runtime -d sample.jar
-See also: https://kotlinlang.org/docs/tutorials/command-line.html
-To Run: java -jar sample.jar
-
-Note: If you don't like Java, there try the incredibly slow Python version.
-Author: Fidel Dahan
 */
 
 val FILE_SIZE = 4L * 1024 * 1024 * 1024  // 4 GB
+//val FILE_SIZE = 16L * 1024 * 1024  // 16 MB
 val ALPHABET64 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789__"
 val WORD_COUNT = FILE_SIZE.div(ALPHABET64.length + 1)
 
